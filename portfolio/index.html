@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal portfolio website showcasing skills, projects, and contact details.">
+    <title>SNEHA | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar" aria-label="Main navigation">
+        <a href="#" class="logo">Sneha Pal</a>
+          <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+          <div class="hero-content">
+            <h1>Hello, I'm <span>Sneha Pal</span></h1>
+            <p>Front-End Developer • Designer • Problem Solver</p>
+            <a class="btn" href="#projects">View My Work</a>
+          </div>
+        </section>
+        <!-- ABOUT -->
+        <section id="about" class="about section">
+          <h2>About Me</h2>
+          <div class="about-grid">
+            <img src="image/profile.jpg" alt="Portrait of me" />
+
+            <p>
+              I'm a web developer passionate about building clean, user-focused digital experiences. 
+              I specialize in responsive front-end development using HTML, CSS, and JavaScript.
+            </p>
+          </div>
+        </section>
+        <!-- PROJECTS -->
+        <section id="projects" class="projects section">
+          <h2>Projects</h2>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <img src="image/project1.png" alt="E-commerce Website">
+              <h3>E-Commerce website</h3>
+              <p>Built with React and Node.js</p>
+              <a href="#" target="_blank" rel="noopener">View Project</a>
+            </article>
+
+          </div>
+        </section>
+          
+        <!-- SKILLS -->
+        <section id="skills" class="skills section">
+          <h2>Skills</h2>
+
+          <ul class="skills-list">
+            <li>HTML5</li>
+            <li>CSS3 / Flexbox / Grid</li>
+            <li>JavaScript</li>
+            <li>Accessibility</li>
+            <li>Responsive Design</li>
+          </ul>
+        </section>
+          
+        <!-- CONTACT -->
+        <section id="contact" class="contact section">
+          <h2>Contact Me</h2>
+
+          <form id="contactForm" novalidate>
+            <label>Name
+              <input type="text" id="name" required aria-required="true" />
+            </label>
+
+            <label>Email
+              <input type="email" id="email" required aria-required="true" />
+            </label>
+
+            <label>Message
+              <textarea id="message" rows="5" required aria-required="true"></textarea>
+            </label>
+
+            <button type="submit" class="btn">Send</button>
+
+            <p id="formMsg" role="alert"></p>
+          </form>
+        </section>
+
+    </main>
+
+
+    <footer>
+      <p>© <span id="year"></span> Sneha Pal</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
